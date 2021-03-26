@@ -1,0 +1,44 @@
+spring:
+  #profiles defined
+  config:
+    activate:
+      on-profile: dev
+    #database configuration
+  datasource:
+    url: jdbc:mysql://localhost:3306/carbonface?characterEncoding=utf-8&serverTimezone=GMT%2B8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: Maple@feng7
+  redis:
+    port: 6379
+    host: localhost
+    database: 0
+    password: Maple@feng7
+    jedis:
+      pool:
+        max-active: 8
+        max-wait: -1
+        max-idle: 8
+        min-idle: 0
+    timeout: 500
+
+#mybatis configuration
+mybatis:
+  #  config-location: classpath:mybatis/mybatis-config.xml
+  configuration:
+    map-underscore-to-camel-case: true
+  typeAliasesPackage: cn.carbonface.carbonuser.entity
+  mapperLocations: classpath:mybatis/mapper/*.xml
+
+
+logging:
+  config: classpath:log4j/log4j2-info.yml
+#  config: src/main/resources/log4j2-config.xml
+#  level:
+#    cn.jay.repository: trace
+
+#swagger config
+springfox:
+  documentation:
+    swagger-ui:
+      enabled: true
