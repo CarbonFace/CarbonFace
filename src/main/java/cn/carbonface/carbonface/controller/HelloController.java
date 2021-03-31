@@ -14,10 +14,9 @@ import org.springframework.web.bind.annotation.RestController;
  */
 
 @RestController
-@RequestMapping("/user")
+@RequestMapping("/hello")
 @Slf4j
 public class HelloController {
-
 
     @GetMapping("hello")
     public String hello(){

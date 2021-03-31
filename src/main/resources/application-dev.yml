@@ -21,6 +21,14 @@ spring:
         max-idle: 8
         min-idle: 0
     timeout: 500
+feign:
+  client:
+    config:
+      default:
+        connectTimeout: 5000
+        readTimeout: 5000
+        loggerLevel: basic
+        requestInterceptors: cn.carbonface.carboncommon.interceptor.FeignClientInterceptor
 
 #mybatis configuration
 mybatis:
