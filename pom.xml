@@ -13,8 +13,8 @@
     <description>carbonface of the CarbonFace Cloud</description>
     <dependencies>
         <dependency>
-            <artifactId>carbon-common</artifactId>
             <groupId>cn.carbonface</groupId>
+            <artifactId>carbon-security</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
         <dependency>
