@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 /**
  * @Classname HelloController
- * @Description TODO
+ * @Description hello controller for carbonface
  * @Author CarbonFace <553127022@qq.com>
  * @Date 2021/3/26 14:01
  * @Version V1.0
@@ -17,7 +17,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/hello")
 @Slf4j
 public class HelloController {
-
 
     @GetMapping("hello")
     public String hello(){

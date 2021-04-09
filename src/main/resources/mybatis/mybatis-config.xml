@@ -24,7 +24,7 @@
     </settings>
 
     <typeAliases>
-        <package name="cn.carbonface.carbonuser.entity"/>
+        <package name="cn.carbonface.carbonface.entity"/>
     </typeAliases>
 
     <!--    <typeHandlers>

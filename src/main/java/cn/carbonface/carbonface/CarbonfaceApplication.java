@@ -10,7 +10,7 @@ import springfox.documentation.oas.annotations.EnableOpenApi;
 
 @SpringBootApplication
 @EnableDiscoveryClient
-@ComponentScan("cn.carbonface")//it's vital to get other module's spring bean
+@ComponentScan("cn.carbonface")                 //it's vital to get other module's spring bean
 @EnableFeignClients("cn.carbonface")
 @EnableConfigurationProperties
 @EnableOpenApi
