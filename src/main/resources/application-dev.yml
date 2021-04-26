@@ -21,6 +21,14 @@ spring:
         max-idle: 8
         min-idle: 0
     timeout: 500
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
 feign:
   client:
     config:
@@ -59,8 +67,8 @@ jwt:
   # Token head
   tokenPrefix: Bearer
   # expire time
-  expiration: 86400
+  expiration: 3600
   # refresh time
   refreshTime: 7
   # no jwt need filter
-  antMatchers: /login/**
+  antMatchers: /login/**,/actuator/**
