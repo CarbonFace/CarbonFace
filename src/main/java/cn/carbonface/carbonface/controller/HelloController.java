@@ -6,11 +6,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * @Classname HelloController
- * @Description hello controller for carbonface
- * @Author CarbonFace <553127022@qq.com>
- * @Date 2021/3/26 14:01
- * @Version V1.0
+ * Classname: HelloController
+ * Description: hello controller for carbonface
+ * @author CarbonFace <553127022@qq.com>
+ * Date: 2021/3/26 14:01
+ * @version V1.0
  */
 
 @RestController
