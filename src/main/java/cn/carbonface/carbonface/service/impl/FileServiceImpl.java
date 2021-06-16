@@ -4,7 +4,7 @@ import cn.carbonface.carboncommon.dto.mongodb.MongoFile;
 import cn.carbonface.carboncommon.exception.CarbonException;
 import cn.carbonface.carboncommon.tools.HttpUtil;
 import cn.carbonface.carboncommon.tools.MongoGridFSUtil;
-import cn.carbonface.carbonface.service.CommonService;
+import cn.carbonface.carbonface.service.FileService;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.io.IOUtils;
 import org.bson.types.ObjectId;
@@ -17,16 +17,16 @@ import java.io.IOException;
 import java.io.InputStream;
 
 /**
- * classname CommonServiceImpl
- * Description TODO
+ * classname: FileServiceImpl
+ * Description: file service implement
  *
  * @author carbonface <553127022@qq.com>
- * Date 2021/4/28 14:02
+ * Date: 2021/4/28 14:02
  * @version v1.0
  */
 @Service
 @Slf4j
-public class CommonServiceImpl implements CommonService {
+public class FileServiceImpl implements FileService {
 
     @Transactional
     @Override

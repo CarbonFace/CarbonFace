@@ -6,6 +6,7 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.scheduling.annotation.EnableScheduling;
 import springfox.documentation.oas.annotations.EnableOpenApi;
 
 @SpringBootApplication
@@ -14,6 +15,7 @@ import springfox.documentation.oas.annotations.EnableOpenApi;
 @EnableFeignClients("cn.carbonface")
 @EnableConfigurationProperties
 @EnableOpenApi
+@EnableScheduling
 public class CarbonfaceApplication {
 
     public static void main(String[] args) {

@@ -7,13 +7,13 @@ spring:
   datasource:
     url: jdbc:mysql://localhost:3306/carbonface?characterEncoding=utf-8&serverTimezone=GMT%2B8
     driver-class-name: com.mysql.cj.jdbc.Driver
-    username: root
-    password: Maple@feng7
+    username: carbonface
+    password: Carbon@mysqlFace
   redis:
     port: 6379
     host: localhost
     database: 0
-    password: Maple@feng7
+    password: Carbon@redis
     lettuce:
       pool:
         max-active: 8
@@ -29,6 +29,10 @@ spring:
       host: localhost
       port: 27017
       grid-fs-database: mongoFile
+  servlet:
+    multipart:
+      max-file-size: 200MB
+      max-request-size: 300MB
 management:
   endpoints:
     web:
